@@ -1,16 +1,13 @@
-### Hi there 👋
+### Neurorave
 
-<!--
-**neurorave/neurorave** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository contains the supporting information for the ISMIR submission of the paper
+_Neurorave: Embedded deep audio synthesis with expressive control_
 
-Here are some ideas to get you started:
+### Supporting webpage
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Supplementary experiments and results along with audio examples are available in the pages version of this repository
+
+
+### Source code
+
+The source code will be fully released under open-source license once the paper is accepted.
