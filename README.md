@@ -1,4 +1,4 @@
-### Neurorave
+# Neurorave
 
 This repository contains the supporting information for the ISMIR submission of the paper
 _Neurorave: Embedded deep audio synthesis with expressive control_
