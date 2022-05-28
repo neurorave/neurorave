@@ -5,7 +5,7 @@ _Neurorave: Embedded deep audio synthesis with expressive control_
 
 ### Supporting webpage
 
-Supplementary experiments and results along with audio examples are available in the pages version of this repository
+Supplementary experiments and results along with audio examples are available in the [pages version of this repository](https://neurorave.github.io/neurorave/)
 
 
 ### Source code
