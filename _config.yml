@@ -1,5 +1,4 @@
 title: Neurorave
 logo: figures/logo.png
-description: Embedded deep audio synthesis with expressive control
-google_analytics:
+description: Embedded deep audio synthesis with expressive controls
 theme: jekyll-theme-minima
