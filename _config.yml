@@ -1,3 +1,4 @@
 title: Neurorave
 description: Embedded deep audio synthesis with expressive controls
-theme: jekyll-theme-minima
+logo: figures/logo.png
+theme: minima
