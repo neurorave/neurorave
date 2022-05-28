@@ -8,6 +8,22 @@ Despite the significant advances in deep models for music generation, the use of
 
 In short, NeuroRave combines cutting-edge neural audio synthesis as well as customizable expressive control, allowing the musician to access neural synthesis through a flexible interface. 
 
+**Examples contents**
+  * [Audio reconstruction](#audio-reconstruction)
+  * [Macro-control learning](#macro-control-learning)
+  * [Audio space interpolation](#audio-space-interpolation)
+  * [Parameters inference and generalization](#parameters-inference)
+  * [Semantic dimensions evaluation](#semantic-dimensions-evaluation)
+  * [Vocal sketching](#vocal-sketching)
+
+**Code and implementation**
+  * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
+  * [Source code](#code)
+
+**Additional details**
+  * [Mathematical appendix](#mathematical-appendix)
+  * [Models architecture](#models-details)
+
 ## Audio reconstruction
 
 First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-\**) or *faders* (\textit*F-\**). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
