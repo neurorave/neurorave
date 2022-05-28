@@ -31,14 +31,16 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 **Examples contents**
   * [Audio reconstruction](#audio-reconstruction)
-  * [Macro-control learning](#macro-control-learning)
-  * [Audio space interpolation](#audio-space-interpolation)
-  * [Parameters inference and generalization](#parameters-inference)
-  * [Semantic dimensions evaluation](#semantic-dimensions-evaluation)
-  * [Vocal sketching](#vocal-sketching)
+  * [Single-attribute control](#single-attribute-control)
+  * [Multi-attribute control](#multi-attribute-control)
+  * [Datasets comparison](#datasets-comparison)
+  * [Latent space analysis](#latent-space-analysis)
+  * [Timbre and attribute transfers](#time-and-attribute-transfer)
+  * [Joint prior generation](#joint-prior-generation)
 
 **Code and implementation**
-  * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
+  * [Real-time implementation](#real-time-implementation)
+  * [Hardware embedding](#hardware-embedding)
   * [Source code](#code)
 
 **Additional details**
@@ -48,7 +50,7 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 ## Audio reconstruction
 
-Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the following are its reconstructions by the implemented models.
+First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-\**) or *faders* (\textit*F-\**). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
 
 <div class="figure">
     <table>
@@ -119,7 +121,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
 
 <br/>
 
-## Macro-control learning
+## Single-attribute control
 
 The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
 
