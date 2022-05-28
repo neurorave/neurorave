@@ -61,19 +61,6 @@ The code is mostly divided into two scripts `train.py` and `evaluate.py`. The fi
 
 ## Models details
 
-### Baseline models. 
-In order to evaluate our proposal, we implemented several feed-forward deep models. In our context, it means that all the baseline models take the full spectrogram of one sample $$\mathbf{x}_i$$ as input and try to infer the corresponding synthesis parameters $$\mathbf{v}_i$$. All these models are trained with a Mean-Squared Error (MSE) loss computed between the output of the model and the ground-truth parameters vector.
+### Baseline models.
 
-#### Multi-Layer Perceptron (MLP)
-First, we implement a 5-layers `MLP` with 2048 hidden units per layer, Exponential Linear Unit (ELU) activation, batch normalization and dropout with $$p=.3$$. This model is applied on a flattened version of the spectrogram and the final layer is a sigmoid activation.
-
-
-### Auto-encoding models
-We implemented various AE architectures, which are slightly more complex in terms of training as it involves two training signals. 
-
-#### Families of auto-encoders (AE, VAE, WAE, VAEFlows)
-First, we implement a simple deterministic `AE` without regularization. We implement the `VAE` by adding a KL regularization to the latent space and the `WAE` by replacing the KL by the MMD. Finally, we implement `VAEFlow` by adding a normalizing flow of 16 successive IAF transforms to the `VAE` posterior. 
-
-### Optimization
-We train all models for 500 epochs with ADAM, initial rate 2e-4, Xavier initialization and a scheduler that halves the rate if validation loss stalls for 20 epochs. With this setup, the most complex model only takes $\sim$5 hours to train on a NVIDIA Titan Xp GPU.
-
+### RAVE
