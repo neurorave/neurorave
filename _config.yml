@@ -1,4 +1,6 @@
-title: Neurorave
 description: Embedded deep audio synthesis with expressive controls
 logo: figures/logo.png
 theme: minima
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
