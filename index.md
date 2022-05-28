@@ -28,7 +28,7 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 ## Audio reconstruction
 
-First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-\**) or *faders* (\textit*F-\**). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
+First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-*) or *faders* (*F-*). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
 
 ## Single attribute control
 
@@ -40,7 +40,7 @@ In this section, we further analyze how different methods behave in terms of con
 
 ## Datasets comparison
 
-Here, we evaluate how our proposed F-RAVE model can be used on any type of sounds, by training on \textit{harmonic} (NSynth), \textit{percussive} (darbouka) and \textit{speech} (SC09) datasets in the multi-attribute setup. We display the reconstruction (\textit{Rec.}) and control (\textit{Ctr.}) results
+Here, we evaluate how our proposed F-RAVE model can be used on any type of sounds, by training on *harmonic* (NSynth), *percussive* (darbouka) and *speech* (SC09) datasets in the multi-attribute setup. We display the reconstruction (*Rec.*) and control (*Ctr.*) results
 
 ## Latent space analysis
 
@@ -54,7 +54,10 @@ Not available yet.
 
 ## Hardware embedding
 
-Not available yet.
+Finally, in order to evaluate the creative quality of our model as a musical instrument, we introduce the *NeuroRave*, a prototype hardware synthesizer that generates music using our F-RAVE model. The interface is a module following the Eurorack specifications in order to allow for CV and gate interactions with other classical Eurorack modules. More precisely, alongside with the OLED screen and a RGB LED encoder button, our module features four CVs and two Gates. The software computation is handled by a [Jetson Nano](https://developer.nvidia.com/embedded), a mini-computer connected to our front board, which provides a 128-core GPU alongside with a Quad-core CPU.
+
+### User interaction
+The main *gate* input triggers the generation of the sound, while one of the CV handle the first latent dimension of the prior. The left CVs handle the sliding of the attributes, one by one. The last gate offers a more experimental control as it triggers the modification of all attributes at the same time, similarly to a macro-control. 
 
 
 ## Code
