@@ -1,5 +1,5 @@
 description: Embedded deep audio synthesis with expressive controls
 logo: figures/logo.png
-theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
