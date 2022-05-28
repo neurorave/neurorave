@@ -29,25 +29,6 @@ Despite the significant advances in deep models for music generation, the use of
 
 In short, NeuroRave combines cutting-edge neural audio synthesis as well as customizable expressive control, allowing the musician to access neural synthesis through a flexible interface. 
 
-**Audio samples contents**
-  * [Audio reconstruction](#audio-reconstruction)
-  * [Single-attribute control](#single-attribute-control)
-  * [Multi-attribute control](#multi-attribute-control)
-  * [Datasets comparison](#datasets-comparison)
-  * [Latent space analysis](#latent-space-analysis)
-  * [Timbre and attribute transfers](#time-and-attribute-transfer)
-  * [Joint prior generation](#joint-prior-generation)
-
-**Code and implementation**
-  * [Real-time implementation](#real-time-implementation)
-  * [Hardware embedding](#hardware-embedding)
-  * [Source code](#code)
-
-**Additional details**
-  * [Mathematical appendix](#mathematical-appendix)
-  * [Models architecture](#models-details)
-
-
 ## Audio reconstruction
 
 First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-\**) or *faders* (\textit*F-\**). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
@@ -123,9 +104,7 @@ First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructin
 
 ## Single-attribute control
 
-The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
-
-The following examples present the evolution of synth parameters and corresponding spectrogram while moving along a dimension of the latent space. Spectrograms generally show a smooth variation in audio features, while parameters move in a non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
+In this section, we further analyze how different methods behave in terms of control quality. To do so, we trained a separate model for each of the 6 descriptors, and a model for all descriptors at once (termed C-RAVE (m.) and F-RAVE (m.)). We analyze the correlation between target and output attributes when changing a single descriptor.
 
 <div class="figure">
 
@@ -204,9 +183,7 @@ The following examples present the evolution of synth parameters and correspondi
 
 ## Multi-attribute control
 
-The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
-
-The following examples present the evolution of synth parameters and corresponding spectrogram while moving along a dimension of the latent space. Spectrograms generally show a smooth variation in audio features, while parameters move in a non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
+In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once.
 
 <div class="figure">
 
@@ -283,28 +260,9 @@ The following examples present the evolution of synth parameters and correspondi
 </div>
 <br/>
 
+## Datasets comparison
 
-  * [Audio reconstruction](#audio-reconstruction)
-  * [Single-attribute control](#single-attribute-control)
-  * [Multi-attribute control](#multi-attribute-control)
-  * [Datasets comparison](#datasets-comparison)
-  * [Latent space analysis](#latent-space-analysis)
-  * [Timbre and attribute transfers](#time-and-attribute-transfer)
-  * [Joint prior generation](#joint-prior-generation)
-
-**Code and implementation**
-  * [Real-time implementation](#real-time-implementation)
-  * [Hardware embedding](#hardware-embedding)
-  * [Source code](#code)
-
-**Additional details**
-  * [Mathematical appendix](#mathematical-appendix)
-  * [Models architecture](#models-details)
-## Audio space interpolation
-
-In this experiment, we select two audio samples, and embed them in the latent space as $$\mathbf{z}_0$$ and $$\mathbf{z}_1$$. We then explore their neighborhoods, and continuously interpolate in between. At each latent point in the neighborhoods and interpolation, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
-
-On the figure below, one can listen to the output and visualize the way spectograms and parameters evolve. It is encouraging to see how the spectrograms look alike in the neighborhoods of $$\mathbf{z}_0$$ and $$\mathbf{z}_1$$, even though parameters may vary more.
+Here, we evaluate how our proposed F-RAVE model can be used on any type of sounds, by training on \textit{harmonic} (NSynth), \textit{percussive} (darbouka) and \textit{speech} (SC09) datasets in the multi-attribute setup. We display the reconstruction (\textit{Rec.}) and control (\textit{Ctr.}) results
 
 <div class="figure">
     <table class="noRowLine neighborhood audioTable">
@@ -414,34 +372,14 @@ On the figure below, one can listen to the output and visualize the way spectogr
 </div>
 
 
-## Parameters inference
+## Latent space analysis
 
-Here, we compare the accuracy of all models on *parameters inference* by computing the magnitude-normalized *Mean Square Error* ($$MSE_n$$) between predicted and original parameters values. We average these results across folds and report variance. We also evaluate the distance between the audio synthesized from inferred parameters and the original with the *Spectral Convergence* (SC) distance (magnitude-normalized Frobenius norm) and *MSE*. We provide evaluations for *16* and *32* parameters on the test set and an *out-of-domain* dataset in the following table.
+## Timbre and attribute transfers
 
-<div class="figure">
-<img src="figures/results_models.png">
-</div>
+## Joint prior generation
 
-In low parameters settings, baseline models seem to perform an accurate approximation of parameters, with the $$CNN$$ providing the best inference. Based on this criterion solely, our formulation would appear to provide only a marginal improvement, with $$VAE$$s even outperformed by baseline models and best results obtained by the $$WAE$$. However, analysis of the corresponding audio accuracy tells an entirely different story. Indeed, AEs approaches strongly outperform baseline models in audio accuracy, with the best results obtained by our proposed $$Flow_{reg}$$ (1-way ANOVA $$F=2.81$$, $$p<.003$$). These results show that, even though AE models do not provide an exact parameters approximation, they are able to account for the importance of these different parameters on the synthesized audio. This supports our original hypothesis that learning the latent space of synthesizer audio capabilities is a crucial component to understand its behavior. Finally, it appears that adding *disentangling flows* ($$Flow_{dis}$$) slightly impairs the audio accuracy. However, the model still outperform most approaches, while providing the huge benefit of explicit semantic macro-controls.
+## Real-time implementation
 
-*Increasing parameters complexity*. We evaluate the robustness of different models by increasing the number of parameters from 16 to 32. As we can see, the accuracy of baseline models is highly degraded, notably on audio reconstruction. Interestingly, the gap between parameter and audio accuracies is strongly increased. This seems logical as the relative importance of parameters in larger sets provoke stronger impacts on the resulting audio. Also, it should be noted that $$VAE*$$ models now outperform baselines even on parameters accuracy. Although our proposal also suffers from larger sets of parameters, it appears as the most resilient and manages this higher complexity. While the gap between AE variants is more pronounced, the *flows* strongly outperform all methods ($$F=8.13$$, $$p<.001$$).
-
-*Out-of-domain generalization*. We evaluate *out-of-domain generalization* with a set of audio samples produced by other synthesizers, orchestral instruments and voices, with the same audio evaluation. Here, the overall distribution of scores remains consistent with previous observations. However, it seems that the average error is quite high, indicating a potentially distant reconstruction of some examples. Upon closer listening, it seems that the models fail to reproduce natural sounds (voices, instruments) but perform well with sounds from other synthesizers. In both cases, our proposal accurately reproduces the temporal shape of target sounds, even if the timbre is somewhat distant.
-
-## Semantic dimensions evaluation
-
-Our proposed *disentangling flows* can steer the organization of selected latent dimensions so that they provide a separation of given tags. As this audio space is mapped to parameters, this turns the selected dimensions into *macro-parameters* with a clearly defined semantic meaning. To evaluate this, we analyze the behavior of corresponding latent dimensions, as depicted in the following figure.
-
-<img src="figures/meta_parameters_semantic.png">
-
-First, we can see the effect of disentangling flows on the latent space (left), which provide a separation of semantic pairs. We study the traversal of semantic dimensions while keeping all other fixed at $$\mathbf{0}$$ and infer corresponding parameters. We display the 6 parameters with highest variance and the resulting synthesized audio. As we can see, the semantic latent dimensions provide a very smooth evolution in terms of both parameters and synthesized audio. Interestingly, while the parameters evolution is smooth, it exhibits non-linear relationships between different parameters. This correlates with the intuition that there are complex interplays in parameters of a synthesizer. Regarding the effect of different semantic dimensions, it appears that the [*'Constant'*, *'Moving'*] pair provides a very intuitive result. Indeed, the synthesized sounds are mostly stationary in extreme negative values, but gradually incorporate clearly marked temporal modulations. Hence, our proposal appears successful to uncover *semantic macro-parameters* for a given synthesizer. However, the corresponding parameters are quite harder to interpret. The [*'Calm'*, *'Aggressive'*] dimension also provides an intuitive control starting from a sparse sound and increasingly adding modulation, resonance and noise. However, we note that the notion of '*Aggressive*' is highly subjective and requires finer analyses to be conclusive.
-
-## Vocal sketching
-
-Finally, our models allow vocal sketching, by embedding a recorded vocal sample in the latent space and finding the matching parameters. Below are examples of how the models respond to several recorded samples.
-
-
-## Real-time implementation using Ableton Live
 
 Not available yet.
 
