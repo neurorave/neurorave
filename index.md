@@ -10,14 +10,16 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 **Examples contents**
   * [Audio reconstruction](#audio-reconstruction)
-  * [Macro-control learning](#macro-control-learning)
-  * [Audio space interpolation](#audio-space-interpolation)
-  * [Parameters inference and generalization](#parameters-inference)
-  * [Semantic dimensions evaluation](#semantic-dimensions-evaluation)
-  * [Vocal sketching](#vocal-sketching)
+  * [Single attribute control](#single-attribute-control)
+  * [Multiple attributes control](#multiple-attributes-control)
+  * [Datasets comparison](#datasets-comparison)
+  * [Latent space analysis](#latent-space-analysis)
+  * [Timbre and attribute transfers](#timbre-and-attribute-transfers)
+  * [Joint prior generation](#joint-prior-generation)
 
 **Code and implementation**
-  * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
+  * [Real-time implementation](#real-time-implementation)
+  * [Hardware embedding](#hardware-embedding)
   * [Source code](#code)
 
 **Additional details**
@@ -28,11 +30,11 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-\**) or *faders* (\textit*F-\**). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
 
-## Single-attribute control
+## Single attribute control
 
 In this section, we further analyze how different methods behave in terms of control quality. To do so, we trained a separate model for each of the 6 descriptors, and a model for all descriptors at once (termed C-RAVE (m.) and F-RAVE (m.)). We analyze the correlation between target and output attributes when changing a single descriptor.
 
-## Multi-attribute control
+## Multiple attributes control
 
 In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once.
 
@@ -50,10 +52,14 @@ Here, we evaluate how our proposed F-RAVE model can be used on any type of sound
 
 Not available yet.
 
+## Hardware embedding
+
+Not available yet.
+
 
 ## Code
 
-The full open-source code is currently available on the corresponding [GitHub repository](https://github.com/acids-ircam/flow_synthesizer). Code has been developed with `Python 3.7`. It should work with other versions of `Python 3`, but has not been tested. Moreover, we rely on several third-party libraries that can be found in the README.
+The full open-source code is currently available on the corresponding [GitHub repository](https://github.com/neurorave/neurorave). Code has been developed with `Python 3.7`. It should work with other versions of `Python 3`, but has not been tested. Moreover, we rely on several third-party libraries that can be found in the README.
 
 The code is mostly divided into two scripts `train.py` and `evaluate.py`. The first script `train.py` allows to train a model from scratch as described in the paper. The second script `evaluate.py` allows to generate the figures of the papers, and also all the supporting additional materials visible on this current page.
 
