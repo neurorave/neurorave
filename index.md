@@ -225,7 +225,7 @@ As experiments, we first take as modulators the attributes of other samples comi
         <tr>
             <td>Darbouka</td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_audio.wav">
                 </audio>
             </td>
