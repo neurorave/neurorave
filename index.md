@@ -131,7 +131,7 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 <div class="figure">
     <table style="width:100%;">
         <tr>
-            <th style="width:50px"><b>Japanese</b></th>
+            <th style="width:50px"><b>Japan</b></th>
             <th>Original</th>
             <th>Reconstruction</th>
         </tr>
