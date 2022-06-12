@@ -82,9 +82,43 @@ First, we compare the quality of our models to perform pure reconstruction of an
     </table>
 </div>
 
-<object data="audio/darbouka_darbouka_control.pdf" width="1000" height="1000" type='application/pdf'></object>
-<img src="audio/darbouka_darbouka_control.pdf" width="100%">
-<img src="audio/darbouka_darbouka_reconstruct.pdf" width="100%">
+
+
+<div class="figure">
+    <table>
+        <tr>
+            <th><b>NSynth</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
+        </tr>
+        <tr>
+            <td>C-Rave</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/nsynth_c_nsynth_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/nsynth_c_nsynth_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>F-Rave</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/nsynth_nsynth_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/nsynth_nsynth_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
 
 <br/>
 
