@@ -213,11 +213,11 @@ As experiments, we first take as modulators the attributes of other samples comi
       <source src="audio/eurorack_single/darbouka_darbouka_reconstruct.wav">
 </audio>
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="18%">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="18%">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="18%">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="18%">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="18%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="19%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="19%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="19%">
 <audio controls> 
       <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
 </audio>
