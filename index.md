@@ -120,6 +120,9 @@ First, we compare the quality of our models to perform pure reconstruction of an
     </table>
 </div>
 
+<img src="audio/nsynth_nsynth_reconstruct.png" width="100%">
+<img src="audio/nsynth_nsynth_control.png" width="100%">
+
 <br/>
 
 For the *Japanese* and *Violin* datasets, we only display results for our proposed *F-Rave* model.
