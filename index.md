@@ -122,6 +122,82 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 <br/>
 
+For the *Japanese* and *Violin* datasets, we only display results for our proposed *F-Rave* model.
+
+
+<div class="figure">
+    <table>
+        <tr>
+            <th><b>Japanese</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_2_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_2_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<div class="figure">
+    <table>
+        <tr>
+            <th><b>Violin</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/violin_violin_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/violin_violin_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/violin_violin_2_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/violin_violin_2_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
 
 ## Single attribute control
 
