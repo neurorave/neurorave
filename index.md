@@ -208,7 +208,33 @@ In this section, we further analyze how different methods behave in terms of con
 
 As experiments, we first take as modulators the attributes of other samples coming from the same dataset. Then, we simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. For both of the configurations, we also simulate a smoothed attenuation of the modulation effects by computing the mean of attributes between the original sample and the modulator. 
 
-1. Attributes coming from an other sample of the dataset:
+**Attributes coming from classical synthesizers control signals**
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_reconstruct.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_1.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_4.wav">
+</audio>
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png">
+
+**Attributes coming from an other sample of the dataset**
 
 <div class="figure">
     <table style="width:100%;">
@@ -347,278 +373,12 @@ As experiments, we first take as modulators the attributes of other samples comi
     </table>
 </div>
 
-2. Smoothing by taking the mean of the modulator and the original sample:
-
-3. Attributes coming from classical synthesizers modulators:
-
-4. Smoothing by taking the mean of the modulator and the original sample:
-
-<div class="figure">
-
-    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{5}\)</p>
-    <img src="audio/meta_parameters/z5/z5.png" width="100%">
-
-    <div align="middle">
-        <audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_0.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_1.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_2.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_3.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_4.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_5.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_6.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_7.mp3">
-        </audio>
-    </div>
-    <br/>
-
-    <br/>
-    <p align="middle"><b>Click <a href="javascript:look('divMetaParams');" title="More comparisons">here</a> to see more examples</b></p>
-    
-    <div id="divMetaParams" style="display: none;">
-        
-    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{6}\)</p>
-    <img src="audio/meta_parameters/z6/z6.png" width="100%">
-
-    <div align="middle">
-        <audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_0.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_1.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_2.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_3.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_4.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_5.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_6.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_7.mp3">
-        </audio>
-    </div>
-    <br/>
-
-    </div>
-
-    
-</div>
-<br/>
+**Smoothing by taking the mean of the modulator and the original sample**
 
 ## Multiple attributes control
 
 In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once.
 
-
-<div class="figure">
-
-    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{5}\)</p>
-    <img src="audio/meta_parameters/z5/z5.png" width="100%">
-
-    <div align="middle">
-        <audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_0.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_1.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_2.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_3.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_4.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_5.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_6.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z5/dim_7.mp3">
-        </audio>
-    </div>
-    <br/>
-
-    <br/>
-    <p align="middle"><b>Click <a href="javascript:look('divMetaParams');" title="More comparisons">here</a> to see more examples</b></p>
-    
-    <div id="divMetaParams" style="display: none;">
-        
-    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{6}\)</p>
-    <img src="audio/meta_parameters/z6/z6.png" width="100%">
-
-    <div align="middle">
-        <audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_0.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_1.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_2.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_3.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_4.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_5.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_6.mp3">
-        </audio><!--
-        --><audio controls style="width: 10.5%; padding: 0.5%">
-            <source src="audio/meta_parameters/z6/dim_7.mp3">
-        </audio>
-    </div>
-    <br/>
-
-    </div>
-
-    
-</div>
-<br/>
-
-## Datasets comparison
-
-Here, we evaluate how our proposed F-RAVE model can be used on any type of sounds, by training on *harmonic* (NSynth), *percussive* (darbouka) and *speech* (SC09) datasets in the multi-attribute setup. We display the reconstruction (*Rec.*) and control (*Ctr.*) results
-
-
-<div class="figure">
-    <table class="noRowLine neighborhood audioTable">
-        <tr>
-            <th rowspan="2">Audio</th>
-            <th colspan="2">\(\mathbf{z}_0 + \mathcal{N}(0, 0.1)\)</th>
-            <th rowspan="2">Audio space</th>
-            <th colspan="2">\(\mathbf{z}_1 + \mathcal{N}(0, 0.1)\)</th>
-            <th rowspan="2">Audio</th>
-        </tr>
-        <tr>
-            <th>Parameters</th>
-            <th>Spectrogram</th>
-            <th>Spectrogram</th>
-            <th>Parameters</th>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_0.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_0.png"></td>
-            <td rowspan="8">AUDIO SPACE IMG</td>
-            <td><img src="audio/neighborhood/n0/p1_dim_0.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_0.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_1.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_1.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_1.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_1.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_2.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_2.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_2.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_2.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_3.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_3.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_3.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_3.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_4.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_4.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_4.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_4.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_5.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_5.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_5.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_5.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_6.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_6.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_6.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_6.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_7.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_7.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_7.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_7.mp3"></audio></td>
-        </tr>
-    </table>
-</div>
-<div class="figure">
-    <table class="noRowLine neighborhood interpolation">
-        <tr>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_0.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_1.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_2.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_3.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_4.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_5.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_6.png"></td>
-            <td><img src="audio/neighborhood/n0/interpolate_dim_7.png"></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_0.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_1.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_2.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_3.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_4.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_5.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_6.mp3"></audio></td>
-            <td><audio controls><source src="audio/neighborhood/n0/interpolate_dim_7.mp3"></audio></td>
-        </tr>
-    </table>
-</div>
 
 ## Latent space analysis
 
