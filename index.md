@@ -216,19 +216,23 @@ As experiments, we first take as modulators the attributes of other samples comi
 <audio controls> 
       <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
 </audio>
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="20%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="18%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="18%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="18%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="18%">
+<img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="18%">
 <audio controls style="width: 150px; display: block; margin:20px;"> 
       <source src="audio/eurorack_single/darbouka_darbouka_eurorack_1.wav">
 </audio>
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="20%">
 <audio controls style="width: 150px; display: block; margin:20px;"> 
       <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
 </audio>
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="20%">
-<audio src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav" style="width: 150px; display: block; margin:20px;">
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="20%">
-<audio src="audio/eurorack_single/darbouka_darbouka_eurorack_4.wav" style="width: 150px; display: block; margin:20px;"/>
-<img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="20%">
+<audio controls style="width: 150px; display: block; margin:20px;"> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
+</audio>
+<audio controls style="width: 150px; display: block; margin:20px;"> 
+      <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
+</audio>
 
 **Attributes coming from an other sample of the dataset**
 
