@@ -206,6 +206,138 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 
 In this section, we further analyze how different methods behave in terms of control quality. To do so, we trained a separate model for each of the 6 descriptors, and a model for all descriptors at once (termed C-RAVE (m.) and F-RAVE (m.)). We analyze the correlation between target and output attributes when changing a single descriptor.
 
+As experiments, we first take as modulators the attributes of other samples coming from the same dataset. Then, we simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. For both of the configurations, we also simulate a smoothed attenuation of the modulation effects by computing the mean of attributes between the original sample and the modulator. 
+
+### Attributes coming from an other sample of the dataset
+
+<div class="figure">
+    <table style="width:100%;">
+        <tr>
+            <th style="width:50px"><b>Dataset</b></th>
+            <th>Original</th>
+            <th>Modulator</th>
+            <th>RMS</th>
+            <th>Centroid</th>
+            <th>Bandwidth</th>  
+            <th>Sharpness</th>
+            <th>Boominess</th>
+        </tr>
+        <tr>
+            <td>Darbouka</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>  
+        </tr>
+        <tr>
+            <td>Japanese</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>  
+        </tr>
+         <tr>
+            <td>Violin</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                </audio>
+            </td>   
+        </tr>  
+    </table>
+</div>
 
 <div class="figure">
 
