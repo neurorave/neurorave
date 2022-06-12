@@ -62,7 +62,7 @@ First, we compare the quality of our models to perform pure reconstruction of an
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruction.wav">
+                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
                 </audio>
             </td>
         </tr>
@@ -75,12 +75,15 @@ First, we compare the quality of our models to perform pure reconstruction of an
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruction.wav">
+                    <source src="audio/darbouka_darbouka_reconstruct.wav">
                 </audio>
             </td>
         </tr>
     </table>
 </div>
+
+<img src="darbouka_darbouka_control.pdf" width="100%">
+<img src="darbouka_darbouka_reconstruct.pdf" width="100%">
 
 <br/>
 
