@@ -82,8 +82,9 @@ First, we compare the quality of our models to perform pure reconstruction of an
     </table>
 </div>
 
-<img src="darbouka_darbouka_control.pdf" width="100%">
-<img src="darbouka_darbouka_reconstruct.pdf" width="100%">
+<object data="audio/darbouka_darbouka_control.pdf" width="1000" height="1000" type='application/pdf'></object>
+<img src="audio/darbouka_darbouka_control.pdf" width="100%">
+<img src="audio/darbouka_darbouka_reconstruct.pdf" width="100%">
 
 <br/>
 
