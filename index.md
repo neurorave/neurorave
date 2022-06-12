@@ -226,37 +226,37 @@ As experiments, we first take as modulators the attributes of other samples comi
             <td>Darbouka</td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_original.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_audio.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_feats.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_0.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_1.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_2.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_3.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_4.wav">
                 </audio>
             </td>  
         </tr>
@@ -264,37 +264,37 @@ As experiments, we first take as modulators the attributes of other samples comi
             <td>Japanese</td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_original.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_audio.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_feats.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_0.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_1.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_2.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_3.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_4.wav">
                 </audio>
             </td>  
         </tr>
@@ -302,37 +302,37 @@ As experiments, we first take as modulators the attributes of other samples comi
             <td>Violin</td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_original.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_audio.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_feats.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_0.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_1.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_2.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_3.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/darbouka_c_darbouka_reconstruct.wav">
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_4.wav">
                 </audio>
             </td>   
         </tr>  
