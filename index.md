@@ -47,7 +47,7 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 
 <div class="figure">
-    <table>
+    <table style="width:100%;">
         <tr>
             <th><b>Darbuka</b></th>
             <th>Original</th>
@@ -85,7 +85,7 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 
 <div class="figure">
-    <table>
+    <table style="width:100%;">
         <tr>
             <th><b>NSynth</b></th>
             <th>Original</th>
@@ -126,7 +126,7 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 
 
 <div class="figure">
-    <table>
+    <table style="width:100%;">
         <tr>
             <th><b>Japanese</b></th>
             <th>Original</th>
@@ -164,7 +164,7 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 
 
 <div class="figure">
-    <table>
+    <table style="width:100%;">
         <tr>
             <th><b>Violin</b></th>
             <th>Original</th>
