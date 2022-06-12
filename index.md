@@ -209,16 +209,16 @@ In this section, we further analyze how different methods behave in terms of con
 As experiments, we first take as modulators the attributes of other samples coming from the same dataset. Then, we simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. For both of the configurations, we also simulate a smoothed attenuation of the modulation effects by computing the mean of attributes between the original sample and the modulator. 
 
 **Attributes coming from classical synthesizers control signals**
-<audio controls> 
-      <source src="audio/eurorack_single/darbouka_darbouka_reconstruct.wav">
-</audio>
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
+<audio controls> 
+      <source src="audio/eurorack_single/darbouka_darbouka.wav">
+</audio>
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="19%">
-<audio controls> 
+<audio controls style="width: 150px; display: block; margin:20px;"> 
       <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
 </audio>
 <audio controls style="width: 150px; display: block; margin:20px;"> 
