@@ -214,128 +214,136 @@ As experiments, we first take as modulators the attributes of other samples comi
     <table style="width:100%;">
         <tr>
             <th style="width:50px"><b>Dataset</b></th>
-            <th>Original</th>
-            <th>Modulator</th>
-            <th>RMS</th>
-            <th>Centroid</th>
-            <th>Bandwidth</th>  
-            <th>Sharpness</th>
-            <th>Boominess</th>
+            <th>Darbouka</th>
+            <th>Japanese</th>
+            <th>Violin</th>
         </tr>
         <tr>
-            <td>Darbouka</td>
+            <td>Original</td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_audio.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_feats.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_0.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_1.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_2.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_3.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_4.wav">
-                </audio>
-            </td>  
-        </tr>
-        <tr>
-            <td>Japanese</td>
-            <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_audio.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_audio.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Modulator</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_feats.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_feats.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_feats.wav">
+                </audio>
+            </td>
+        </tr>
+         <tr>
+            <td>RMS</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_0.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_0.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_0.wav">
+                </audio>
+            </td>
+        </tr>
+         <tr>
+            <td>Centroid</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_1.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_1.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_1.wav">
+                </audio>
+            </td>
+        </tr>
+         <tr> 
+            <td>Bandwidth</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_2.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_2.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_2.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr> 
+            <td>Sharpness</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_3.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_3.wav">
                 </audio>
             </td>
             <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_4.wav">
-                </audio>
-            </td>  
-        </tr>
-         <tr>
-            <td>Violin</td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_audio.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_feats.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_0.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_1.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_2.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_3.wav">
                 </audio>
             </td>
+        </tr>
+        <tr> 
+            <td>Boominess</td>
             <td>
-                <audio controls> 
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/darbouka_darbouka_darbouka_0_763_1017_change_4.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/single_attribute_sample_attr/japanese_japanese_japanese_0_4637_2062_change_4.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_4.wav">
                 </audio>
-            </td>   
-        </tr>  
+            </td>
+        </tr>          
     </table>
 </div>
 
