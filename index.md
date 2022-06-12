@@ -208,7 +208,7 @@ In this section, we further analyze how different methods behave in terms of con
 
 As experiments, we first take as modulators the attributes of other samples coming from the same dataset. Then, we simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. For both of the configurations, we also simulate a smoothed attenuation of the modulation effects by computing the mean of attributes between the original sample and the modulator. 
 
-### Attributes coming from an other sample of the dataset
+1. Attributes coming from an other sample of the dataset:
 
 <div class="figure">
     <table style="width:100%;">
@@ -338,6 +338,12 @@ As experiments, we first take as modulators the attributes of other samples comi
         </tr>  
     </table>
 </div>
+
+2. Smoothing by taking the mean of the modulator and the original sample:
+
+3. Attributes coming from classical synthesizers modulators:
+
+4. Smoothing by taking the mean of the modulator and the original sample:
 
 <div class="figure">
 
