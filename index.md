@@ -43,70 +43,39 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
 
 ## Audio reconstruction
 
-First, we compare the quality of various models (*VAE*, *RAVE*) in reconstructing an input from the test set, depending on whether it uses *conditioning* (*C-*) or *faders* (*F-*). Then, for those two categories, we also evaluate how the control behaves by changing the attributes of the input sound with those of an out-of-distribution examples. We compute this for mono-attribute training (swapping only the *RMS*) or for multi-attribute training (swapping all atributes) cases. 
+First, we compare the quality of our models to perform pure reconstruction of an input from the test set, depending on whether it uses *conditioning* (*C-*) or *faders* (*F-*). Those models were computed on the *Darbuka* and *NSynth* datasets.
 
 
 <div class="figure">
     <table>
         <tr>
-            <th>Model</th>
-            <th>Sample</th>
-            <th>Spectrogram</th>
-            <th>Parameters</th>
+            <th><b>Darbuka</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
         </tr>
         <tr>
-            <td><b>Original preset</b></td>
+            <td>C-Rave</td>
             <td>
                 <audio controls> 
-                    <source src="audio/reconstruction/1_0/original.mp3">
+                    <source src="audio/darbouka_c_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/darbouka_c_darbouka_reconstruction.wav">
                 </audio>
             </td>
         </tr>
         <tr>
-            <td>VAE-Flow-post</td>
+            <td>F-Rave</td>
             <td>
                 <audio controls> 
-                    <source src="audio/reconstruction/1_0/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1.mp3">
+                    <source src="audio/darbouka_darbouka_original.wav">
                 </audio>
             </td>
-        </tr>
-        <tr>
-            <td>VAE-Flow</td>
             <td>
                 <audio controls> 
-                    <source src="audio/reconstruction/1_0/vae_flow_mel_mse_cnn_mlp_iaf_2.mp3">
-                </audio>
-            </td>
-        </tr>
-        <tr>
-            <td>CNN</td>
-            <td>
-                <audio controls> 
-                    <source src="audio/reconstruction/1_0/cnn_mel_mse_1.mp3">
-                </audio>
-            </td>
-        </tr>
-        <tr>
-            <td>MLP</td>
-            <td>
-                <audio controls> 
-                    <source src="audio/reconstruction/1_0/mlp_mel_mse_1.mp3">
-                </audio>
-            </td>
-        </tr>
-        <tr>
-            <td>VAE</td>
-            <td>
-                <audio controls> 
-                    <source src="audio/reconstruction/1_0/vae_mel_mse_cnn_mlp_2.mp3">
-                </audio>
-            </td>
-        </tr>
-        <tr>
-            <td>WAE</td>
-            <td>
-                <audio controls> 
-                    <source src="audio/reconstruction/1_0/wae_mel_mse_cnn_mlp_2.mp3">
+                    <source src="audio/darbouka_darbouka_reconstruction.wav">
                 </audio>
             </td>
         </tr>
