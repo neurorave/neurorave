@@ -211,7 +211,7 @@ As experiments, we first take as modulators the attributes of other samples comi
 **Attributes coming from classical synthesizers control signals**
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
 <audio controls> 
-      <source src="audio/eurorack_single/darbouka_darbouka.wav">
+      <source src="audio/eurorack_single/darbouka_darbouka_reconstruction.wav">
 </audio>
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%">
