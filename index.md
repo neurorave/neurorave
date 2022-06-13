@@ -377,11 +377,11 @@ As experiments, we first take as modulators the attributes of other samples comi
     </table>
 </div>
 
-**Smoothing by taking the mean of the modulator and the original sample**
+The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect.
 
 ## Multiple attributes control
 
-In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once.
+In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once. Similarly to the section above, we first take as modulator classical eurorack signals, then we select an other sample of the dataset as modulator.
 
 
 ## Latent space analysis
