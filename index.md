@@ -383,10 +383,77 @@ The modification of attributes are clearly heard and it appears that the RMS and
 
 In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once. Similarly to the section above, we first take as modulator classical eurorack signals, then we select an other sample of the dataset as modulator.
 
+## Timbre transfers
 
-## Latent space analysis
-
-## Timbre and attribute transfers
+<div class="figure">
+    <table style="width:100%;">
+        <tr>
+            <th>Source</th>
+            <th>Audio</th>
+            <th>Target</th>
+            <th>Audio</th>
+        </tr>
+        <tr>
+            <td>Violin</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_darbouka_violin_original.wav">
+                </audio>
+            </td>
+            <td>Darbouka</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_darbouka_violin_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+          
+        <tr>
+            <td>Darbouka</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_japanese_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>Japanese</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_japanese_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+          
+        <tr>
+            <td>Violin</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_japanese_violin_original.wav">
+                </audio>
+            </td>
+            <td>Japanese</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_japanese_violin_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+          
+        <tr>
+            <td>Darbouka</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_violin_darbouka_original.wav">
+                </audio>
+            </td>
+            <td>Violin</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/transfer_violin_darbouka_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+      </table>
+</div>
 
 ## Joint prior generation
 
