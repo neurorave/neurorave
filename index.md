@@ -216,7 +216,7 @@ Original sound:
       <source src="audio/eurorack_single/darbouka_darbouka_reconstruction.wav">
 </audio>
 
-Modulated sound, we perform a sliding of attribute one by one:
+Modulated sound from Eurorack signals, we slide the attributes one by one:
 
 <div class="figure">
     <table style="width:100%;">
@@ -233,25 +233,21 @@ Modulated sound, we perform a sliding of attribute one by one:
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
                 </audio>
             </td>
-            <td></td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_1.wav">
                 </audio>
             </td>
-            <td></td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
                 </audio>
             </td>
-            <td></td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav">
                 </audio>
             </td>
-            <td></td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_4.wav">
