@@ -206,13 +206,70 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 
 In this section, we further analyze how different methods behave in terms of control quality. To do so, we trained a separate model for each of the 6 descriptors, and a model for all descriptors at once (termed C-RAVE (m.) and F-RAVE (m.)). We analyze the correlation between target and output attributes when changing a single descriptor.
 
-As experiments, we first take as modulators the attributes of other samples coming from the same dataset. Then, we simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. For both of the configurations, we also simulate a smoothed attenuation of the modulation effects by computing the mean of attributes between the original sample and the modulator. 
+As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Then, we select as modulators the attributes of other samples coming from the same dataset.
 
 **Attributes coming from classical synthesizers control signals**
+
+Original sound:
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
 <audio controls> 
       <source src="audio/eurorack_single/darbouka_darbouka_reconstruction.wav">
 </audio>
+
+Modulated sound, we perform a sliding of attribute one by one:
+
+<div class="figure">
+    <table style="width:100%;">
+        <tr>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="19%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="19%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="19%"></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_1.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_4.wav">
+                </audio>
+            </td>
+        </tr>  
+    </table>
+</div>
+
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%">
 <img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="19%">
