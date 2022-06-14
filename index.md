@@ -221,11 +221,11 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
 <div class="figure">
     <table style="width:100%;">
         <tr>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="60%"></th>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="60%"></th>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="60%"></th>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="60%"></th>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="60%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="80%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="80%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="80%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="80%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="80%"></th>
         </tr>
         <tr>
             <td align="center">
