@@ -27,13 +27,11 @@ In short, NeuroRave combines cutting-edge neural audio synthesis as well as cust
   * [Audio reconstruction](#audio-reconstruction)
   * [Single attribute control](#single-attribute-control)
   * [Multiple attributes control](#multiple-attributes-control)
-  * [Datasets comparison](#datasets-comparison)
+  * [Timbre and attribute transfers](#timbre-transfers)
   * [Latent space analysis](#latent-space-analysis)
-  * [Timbre and attribute transfers](#timbre-and-attribute-transfers)
   * [Joint prior generation](#joint-prior-generation)
 
 **Code and implementation**
-  * [Real-time implementation](#real-time-implementation)
   * [Hardware embedding](#hardware-embedding)
   * [Source code](#code)
 
@@ -475,10 +473,9 @@ In this section we take the model trained on a particular dataset and we pass it
         </tr>
       </table>
 </div>
+## Latent space analysis
 
 ## Joint prior generation
-
-## Real-time implementation
 
 ## Hardware embedding
 
