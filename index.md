@@ -228,7 +228,7 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="60%"></th>
         </tr>
         <tr>
-            <td>
+            <td align="center">
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_0.wav">
                 </audio>
