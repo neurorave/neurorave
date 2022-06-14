@@ -221,7 +221,7 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
 <div class="figure">
     <table style="width:100%;">
         <tr>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="19%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="45%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="19%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="19%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="19%"></th>
@@ -283,6 +283,8 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
 </table>
 
 **Attributes coming from an other sample of the dataset**
+
+The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
 
 <div class="figure">
     <table style="width:100%;">
@@ -421,13 +423,13 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
     </table>
 </div>
 
-The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
-
 ## Multiple attributes control
 
 In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once. Similarly to the section above, we first take as modulator classical eurorack signals, then we select an other sample of the dataset as modulator.
 
 ## Timbre transfers
+
+In this section we take the model trained on a particular dataset and we pass it a sample from an other dataset, performing timbre transfer.
 
 <div class="figure">
     <table style="width:100%;">
