@@ -24,11 +24,8 @@ Despite significant advances in deep models for music generation, the use of the
 **Examples contents**
   * [Audio reconstruction](#audio-reconstruction)
   * [Single attribute control](#single-attribute-control)
-  * [Multiple attributes control](#multiple-attributes-control)
   * [Timbre and attribute transfers](#timbre-transfers)
-  * [Latent space analysis](#latent-space-analysis)
-  * [Joint prior generation](#joint-prior-generation)
-
+  
 **Code and implementation**
   * [Hardware embedding](#hardware-embedding)
   * [Source code](#code)
@@ -204,7 +201,7 @@ In this section, we further analyze how different methods behave in terms of con
 
 **Attributes coming from classical synthesizers control signals**
 
-As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results are strongly alterated as these controls might not be the most appropriate for attributes modification. In order to obtain more natural results, the features curves should be adapted to be closer to the original curves.  
+As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results are strongly alterated as these controls might not be the most appropriate for attributes modification. In order to obtain more natural results, the features curves should have been adapted to be closer to the original curves.  
 
 Original sound:
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
@@ -212,7 +209,7 @@ Original sound:
       <source src="audio/eurorack_single/darbouka_darbouka_reconstruction.wav">
 </audio>
 
-Modulated sound from Eurorack signals, we slide the attributes one by one:
+Modulated sound from classical Eurorack synthesizers signals, we slide the attributes one by one:
 
 <div class="figure">
     <table style="width:100%;">
@@ -255,7 +252,7 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
 
 **Attributes coming from an other sample of the dataset**
 
-We select as modulators the attributes of other samples coming from the same dataset. The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
+Here, we select as modulators the attributes of other samples coming from the same dataset. The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
 
 <div class="figure">
     <table style="width:100%;">
@@ -394,10 +391,6 @@ We select as modulators the attributes of other samples coming from the same dat
     </table>
 </div>
 
-## Multiple attributes control
-
-In this section, we further analyze how different methods behave in terms of control quality, by changing random sets of 2, 3, or 4 attributes at once. Similarly to the section above, we first take as modulator classical eurorack signals, then we select an other sample of the dataset as modulator.
-
 ## Timbre transfers
 
 In this section we take the model trained on a particular dataset and we pass it a sample from an other dataset, performing timbre transfer.
@@ -471,9 +464,6 @@ In this section we take the model trained on a particular dataset and we pass it
         </tr>
       </table>
 </div>
-## Latent space analysis
-
-## Joint prior generation
 
 ## Hardware embedding
 
