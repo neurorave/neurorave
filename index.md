@@ -202,9 +202,9 @@ For the *Japanese* and *Violin* datasets, we only display results for our propos
 
 In this section, we further analyze how different methods behave in terms of control quality. To do so, we trained a separate model for each of the 6 descriptors, and a model for all descriptors at once (termed C-RAVE (m.) and F-RAVE (m.)). We analyze the correlation between target and output attributes when changing a single descriptor.
 
-As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Then, we select as modulators the attributes of other samples coming from the same dataset.
-
 **Attributes coming from classical synthesizers control signals**
+
+As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results are strongly alterated as these controls might not be the most appropriate for attributes modification. In order to obtain more natural results, the features curves should be adapted to be closer to the original curves.  
 
 Original sound:
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
@@ -255,7 +255,7 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
 
 **Attributes coming from an other sample of the dataset**
 
-The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
+We select as modulators the attributes of other samples coming from the same dataset. The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
 
 <div class="figure">
     <table style="width:100%;">
