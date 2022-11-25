@@ -1,7 +1,7 @@
-# Neurorave
+# Continuous descriptor-based control for deep audio synthesis
 
-This repository contains the supporting information for the ISMIR submission of the paper
-_Neurorave: Embedded deep audio synthesis with expressive control_
+This repository contains the supporting information for the ICASSP submission of the paper
+_Continuous descriptor-based control for deep audio synthesis_
 
 ### Supporting webpage
 
