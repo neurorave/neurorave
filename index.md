@@ -218,15 +218,20 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
     <table style="width:100%;">
         <tr>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_4.png" width="80%"></th>
+            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="80%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_0.png" width="80%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_1.png" width="80%"></th>
             <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_2.png" width="80%"></th>
-            <th><img src="audio/eurorack_single/darbouka_darbouka_eurorack_3.png" width="80%"></th>
         </tr>
         <tr>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_4.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav">
                 </audio>
             </td>
             <td align="center">
@@ -242,11 +247,6 @@ Modulated sound from Eurorack signals, we slide the attributes one by one:
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/eurorack_single/darbouka_darbouka_eurorack_2.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/eurorack_single/darbouka_darbouka_eurorack_3.wav">
                 </audio>
             </td>
         </tr>  
