@@ -144,12 +144,12 @@ For the *SC09*, *Japanese* and *Violin* datasets, we only display results for ou
             <td></td>
             <td>
                 <audio controls> 
-                    <source src="audio/japanese_japanese_2_original.wav">
+                    <source src="audio/sc09/one_reconstruction.wav">
                 </audio>
             </td>
             <td>
                 <audio controls> 
-                    <source src="audio/japanese_japanese_2_reconstruct.wav">
+                    <source src="audio/sc09/one_reconstruction.wav">
                 </audio>
             </td>
         </tr>
