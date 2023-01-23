@@ -311,7 +311,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_audio.wav">
+                    <source src="audio/violin/violin_violin_violin_1_65_51_audio.wav">
                 </audio>
             </td>
         </tr>
@@ -329,7 +329,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_feats.wav">
+                    <source src="audio/violin/violin_violin_violin_1_65_51_feats.wav">
                 </audio>
             </td>
         </tr>
@@ -347,7 +347,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_0.wav">
+                    <source src="audio/violin/violin_violin_violin_1_65_51_change_0.wav">
                 </audio>
             </td>
         </tr>
@@ -365,7 +365,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_1.wav">
+                    <source src="audio/violin/violin_violin_violin_1_65_51_change_1.wav">
                 </audio>
             </td>
         </tr>
@@ -383,7 +383,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_2.wav">
+                    <source src=violin_violin_violin_1_65_51_change_2.wav>
                 </audio>
             </td>
         </tr>
@@ -401,7 +401,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_3.wav">
+                    <source src=violin_violin_violin_1_65_51_change_3.wav>
                 </audio>
             </td>
         </tr>
@@ -419,7 +419,7 @@ Here, we select as modulators the attributes of other samples coming from the sa
             </td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
-                    <source src="audio/single_attribute_sample_attr/violin_violin_violin_0_74_90_change_4.wav">
+                    <source src="violin_violin_violin_1_65_51_change_4.wav>
                 </audio>
             </td>
         </tr>          
