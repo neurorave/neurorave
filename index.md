@@ -29,6 +29,8 @@ Despite significant advances in deep models for music generation, the use of the
 
 **Additional details**
   * [Comparison with DDSP](#comparison-with-ddsp)
+  * [Japanese dataset evaluation](#japanese-dataset-evaluation)
+
 
 **Code and implementation**
   * [Hardware embedding](#hardware-embedding)
@@ -515,6 +517,12 @@ Some methods such as the DDSP families are able to perform reconstruction and ti
 | F-DDSP |  0.39 | 36.69 |  7.10 |   0.47   | 0.59 |    0.47   |    0.68   |   0.53  | 0.55 |
 | C-RAVE | 0.235 | 13.92 |  4.88 |   0.74   | 0.72 |    0.64   |    0.62   |   0.73  | 0.69 |
 | F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   | 0.76 |    0.66   |    0.72   |   0.77  | 0.73 |               
+
+### Japanese dataset evaluation
+
+| JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
+|-------|-------|-------|------|-------|-----------|
+| 0.061 | 0.417 | 4.673 | 0.96 | 0.023 | 0.121     |
 
 ## Hardware embedding
 
