@@ -118,8 +118,43 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 <br/>
 
-For the *Japanese* and *Violin* datasets, we only display results for our proposed *F-Rave* model.
+For the *SC09*, *Japanese* and *Violin* datasets, we only display results for our proposed *F-Rave* model.
 
+<div class="figure">
+    <table style="width:100%;">
+        <tr>
+            <th style="width:50px"><b>SC09</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/5_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/5_reconstruction.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_2_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/japanese_japanese_2_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
 
 <div class="figure">
     <table style="width:100%;">
