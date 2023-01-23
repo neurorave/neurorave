@@ -31,8 +31,7 @@ Despite significant advances in deep models for music generation, the use of the
   * [Source code](#code)
 
 **Additional details**
-  * [Mathematical appendix](#mathematical-appendix)
-  * [Models architecture](#models-details)
+  * [Comparision with DDSP](#FDDSP)
 
 ## Audio reconstruction
 
@@ -514,8 +513,18 @@ The full open-source code is currently available on the corresponding [GitHub re
 
 The code is mostly divided into two scripts `train.py` and `evaluate.py`. The first script `train.py` allows to train a model from scratch as described in the paper. The second script `evaluate.py` allows to generate the figures of the papers, and also all the supporting additional materials visible on this current page.
 
-## Models details
+## Additionnal details
 
-### Baseline models.
+### Comparision with DDSP
+                                                                        
+Some methods such as the DDSP families are able to perform reconstruction and timbre transfer and could have potentially be a good candidate for a baseline to our work instead of RAVE. However, we believe that the monophonic nature of DDSP is an impediment to an artistic endeavor, especially as our model aims to be embedded into a hardware musical tool. Furthermore, DDSP provides explicit control whereas our work is based on implicit control. In our past experiments with DDSP, we have noticed that the importance of already existing external conditioning (f0, loudness) would render the latent space almost meaningless (having no impact on the generated sounds). Therefore, we believe that DDSP would not be able to take into account our implicit descriptors' conditioning, hence not being a sound choice as a baseline. Beyond our intuition, we performed additional experiments with DDSP as a baseline with NSynth dataset and we display here a straightforward comparison table between our two baseline, RAVE d'une part et DDSP d'autre part.  
 
-### RAVE
+                                                                                                
+|  Model |  JND  |  Mel  | mSTFT | Centroid |  RMS | Bandwidth | Sharpness | Booming | Mean |
+|:------:|:-----:|:-----:|:-----:|:--------:|:----:|:---------:|:---------:|:-------:|:----:|
+| C-DDSP |  0.28 | 36.65 |  7.14 |   0.52   | 0.62 |    0.54   |    0.69   |   0.63  | 0.60 |
+| F-DDSP |  0.39 | 36.69 |  7.10 |   0.47   | 0.59 |    0.47   |    0.68   |   0.53  | 0.55 |
+| C-RAVE | 0.235 | 13.92 |  4.88 |   0.74   | 0.72 |    0.64   |    0.62   |   0.73  | 0.69 |
+| F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   | 0.76 |    0.66   |    0.72   |   0.77  | 0.73 |                                                                                               
+                                                                               
+                                                                                                
