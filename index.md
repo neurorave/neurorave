@@ -507,35 +507,67 @@ In this section we take the model trained on a particular dataset and we pass it
         </tr>
         
           
-          
-          
                   <tr>
-            <td>Darbouka</td>
+            <td>Japanese</td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/timbre_transfer/part2/darbouka_japanese_darbouka_0_4107_712_audio.wav">
                 </audio>
             </td>
-            <td>Violin</td>
+            <td>Dabouka</td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/timbre_transfer/part2/darbouka_japanese_darbouka_0_4107_712_change_4.wav">
                 </audio>
             </td>
         </tr>        <tr>
-            <td>Darbouka</td>
+            <td>Japanese</td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/timbre_transfer/part2/darbouka_japanese_darbouka_1_592_130_audio.wav">
                 </audio>
             </td>
-            <td>Violin</td>
+            <td>Darbuka</td>
             <td>
                 <audio controls style="width: 150px; display: block; margin:20px;"> 
                     <source src="audio/timbre_transfer/part2/darbouka_japanese_darbouka_1_592_130_change_4.wav">
                 </audio>
             </td>
         </tr>
+
+
+          
+          <tr>
+            <td>Japanese</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/part2/violin_japanese_violin_0_3248_249_audio.wav">
+                </audio>
+            </td>
+            <td>Violin</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/part2/violin_japanese_violin_0_3248_249_change_4.wav">
+                </audio>
+            </td>
+        </tr>
+          
+          
+        <tr>
+            <td>Japanesea</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/part2/violin_japanese_violin_1_274_59_audio.wav">
+                </audio>
+            </td>
+            <td>Violin</td>
+            <td>
+                <audio controls style="width: 150px; display: block; margin:20px;"> 
+                    <source src="audio/timbre_transfer/part2/violin_japanese_violin_1_274_59_change_4.wav">
+                </audio>
+            </td>
+        </tr>
+          
       </table>
 </div>
 
