@@ -126,41 +126,6 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 In order to exploit the artistic potential of our method, we performed extended experiments on other datasets than those presented in the paper. We selected a Japanese voice dataset to extend the performance of SC09, which may be limited for attribute exchange or timbre transfer, and we selected a violin dataset to get rid of the monophonic and short unique note of Nsynth. For the *SC09*, *Japanese* and *Violin* datasets, we only present the results of our proposed *F-Rave* model.
 
-<div class="figure">
-    <table style="width:100%;">
-        <tr>
-            <th style="width:50px"><b>SC09</b></th>
-            <th>Original</th>
-            <th>Reconstruction</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <audio controls> 
-                    <source src="audio/sc09/5_original.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/sc09/5_reconstruction.wav">
-                </audio>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <audio controls> 
-                    <source src="audio/sc09/one_original.wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls> 
-                    <source src="audio/sc09/one_reconstructin.wav">
-                </audio>
-            </td>
-        </tr>
-    </table>
-</div>
 
 <div class="figure">
     <table style="width:100%;">
@@ -230,6 +195,42 @@ In order to exploit the artistic potential of our method, we performed extended 
             <td>
                 <audio controls> 
                     <source src="audio/violin_violin_2_reconstruct.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="figure">
+    <table style="width:100%;">
+        <tr>
+            <th style="width:50px"><b>SC09</b></th>
+            <th>Original</th>
+            <th>Reconstruction</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/5_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/5_reconstruction.wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/one_original.wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls> 
+                    <source src="audio/sc09/one_reconstructin.wav">
                 </audio>
             </td>
         </tr>
