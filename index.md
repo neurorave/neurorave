@@ -29,8 +29,8 @@ Despite significant advances in deep models for music generation, the use of the
 
 **Additional details**
   * [Comparison with DDSP](#comparison-with-ddsp)
-  * [Japanese dataset evaluation](#japanese-dataset-evaluation)
-  * [Violin dataset evaluation](#violin-dataset-evaluation)
+  * [Japanese dataset](#japanese-dataset-evaluation)
+  * [Violin dataset](#violin-dataset-evaluation)
 
 
 **Code and implementation**
@@ -530,13 +530,18 @@ We pursued our experiments on speech with the [Japanese speech corpus of Saruwat
 |-------|-------|-------|------|-------|-----------|
 | 0.135 | 0.917 | 4.714 | 0.775 | 0.244 | 0.121     |
 
-We beleive this dataset was more adapted to attribute control and timbre transer and has more artistic potential than SC09 dataset which has been largely used and massively evaluated. 
+We beleive this dataset is more adapted to attribute control and timbre transer and has more artistic potential than SC09 dataset which has been largely used and massively evaluated. 
 
-### Violin dataset evaluation
+### Violin dataset
+
+We pursued our experiments on instrumental sounds with an internal dataset of violin. This 44100Hz dataset contains 10h of recording of violin(s) playing.
 
 | JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
 |-------|-------|-------|------|-------|-----------|
 | 0.226 | 12.998 | 7.591 | 0.791 | 0.252 | 0.136     |
+
+We think this dataset composed of melodies played by one or several violin is more adapted to artistic purpose than Nsynth which is monophonic.
+
 
 ## Hardware embedding
 
