@@ -520,9 +520,17 @@ Some methods such as the DDSP families are able to perform reconstruction and ti
 
 ### Japanese dataset evaluation
 
+We display here the evaluation 
+
 | JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
 |-------|-------|-------|------|-------|-----------|
-| 0.061 | 0.417 | 4.673 | 0.96 | 0.023 | 0.121     |
+| 0.135 | 0.917 | 4.714 | 0.775 | 0.244 | 0.121     |
+
+### Violin dataset evaluation
+
+| JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
+|-------|-------|-------|------|-------|-----------|
+| 0.226 | 12.998 | 7.591 | 0.791 | 0.252 | 0.136     |
 
 ## Hardware embedding
 
