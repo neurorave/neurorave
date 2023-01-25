@@ -29,8 +29,8 @@ Despite significant advances in deep models for music generation, the use of the
 
 **Additional details**
   * [Comparison with DDSP](#comparison-with-ddsp)
-  * [Japanese dataset](#japanese-dataset-evaluation)
-  * [Violin dataset](#violin-dataset-evaluation)
+  * [Japanese dataset](#japanese-dataset)
+  * [Violin dataset](#violin-dataset)
 
 
 **Code and implementation**
