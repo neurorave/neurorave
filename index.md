@@ -526,9 +526,9 @@ In the following, we present the evaluation on our model FRAVE on several datase
 
 We pursued our experiments on speech with the [Japanese speech corpus of Saruwatari Lab]([https://developer.nvidia.com/embedded](https://arxiv.org/abs/1711.00354)) , University of Tokyo, a Japanese text (transcription) and reading-style audio. This 48kHz dataset contains 10h of speech by native Japanese female speaker.
 
-| JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
-|-------|-------|-------|------|-------|-----------|
-| 0.135 | 0.917 | 4.714 | 0.775 | 0.244 | 0.121     |
+|  JND  |  Mel  |  STFT |  Corr |   L1  | Cycle-jnd |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:---------:|
+| 0.135 | 0.917 | 4.714 | 0.775 | 0.244 |   0.121   |
 
 We beleive this dataset is more adapted to attribute control and timbre transer and has more artistic potential than SC09 dataset which has been largely used and massively evaluated. 
 
@@ -536,12 +536,11 @@ We beleive this dataset is more adapted to attribute control and timbre transer 
 
 We pursued our experiments on instrumental sounds with an internal dataset of violin. This 44100Hz dataset contains 10h of recording of violin(s) playing.
 
-| JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
-|-------|-------|-------|------|-------|-----------|
-| 0.226 | 12.998 | 7.591 | 0.791 | 0.252 | 0.136     |
+|  JND  |   Mel  |  STFT |  Corr |   L1  | Cycle-jnd |
+|:-----:|:------:|:-----:|:-----:|:-----:|:---------:|
+| 0.226 | 12.998 | 7.591 | 0.791 | 0.252 |   0.136   |
 
 We think this dataset composed of melodies played by one or several violin is more adapted to artistic purpose than Nsynth which is monophonic.
-
 
 ## Hardware embedding
 
@@ -556,6 +555,8 @@ The main *gate* input triggers the generation of the sound, while one of the CV 
 The full open-source code is currently available on the corresponding [GitHub repository](https://github.com/neurorave/neurorave). Code has been developed with `Python 3.7`. It should work with other versions of `Python 3`, but has not been tested. Moreover, we rely on several third-party libraries that can be found in the README.
 
 The code is mostly divided into two scripts `train.py` and `evaluate.py`. The first script `train.py` allows to train a model from scratch as described in the paper. The second script `evaluate.py` allows to generate the figures of the papers, and also all the supporting additional materials visible on this current page.
+
+**Our code will be released under acceptance**
 
                                                                                 
                                                                                
