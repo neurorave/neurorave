@@ -30,6 +30,7 @@ Despite significant advances in deep models for music generation, the use of the
 **Additional details**
   * [Comparison with DDSP](#comparison-with-ddsp)
   * [Japanese dataset evaluation](#japanese-dataset-evaluation)
+  * [Violin dataset evaluation](#violin-dataset-evaluation)
 
 
 **Code and implementation**
@@ -518,13 +519,18 @@ Some methods such as the DDSP families are able to perform reconstruction and ti
 | C-RAVE | 0.235 | 13.92 |  4.88 |   0.74   | 0.72 |    0.64   |    0.62   |   0.73  | 0.69 |
 | F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   | 0.76 |    0.66   |    0.72   |   0.77  | 0.73 |               
 
-### Japanese dataset evaluation
 
-We display here the evaluation 
+In the following, we present the evaluation on our model FRAVE on several dataset that were not presented in our paper.
+
+### Japanese dataset
+
+We pursued our experiments on speech with the [Japanese speech corpus of Saruwatari Lab]([https://developer.nvidia.com/embedded](https://arxiv.org/abs/1711.00354)) , University of Tokyo, a Japanese text (transcription) and reading-style audio. This 48kHz dataset contains 10h of speech by native Japanese female speaker.
 
 | JND   | Mel   | STFT  | Corr | L1    | cycle-jnd |
 |-------|-------|-------|------|-------|-----------|
 | 0.135 | 0.917 | 4.714 | 0.775 | 0.244 | 0.121     |
+
+We beleive this dataset was more adapted to attribute control and timbre transer and has more artistic potential than SC09 dataset which has been largely used and massively evaluated. 
 
 ### Violin dataset evaluation
 
