@@ -509,15 +509,41 @@ In this section we take the model trained on a particular dataset and we pass it
                                                                                                 
 ### Comparison with DDSP
                                                                         
-Some methods such as the DDSP families are able to perform reconstruction and timbre transfer and could have potentially be a good candidate for a baseline to our work instead of RAVE. However, we believe that the monophonic nature of DDSP is an impediment to an artistic endeavor, especially as our model aims to be embedded into a hardware musical tool. Furthermore, DDSP provides explicit control whereas our work is based on implicit control. In our past experiments with DDSP, we have noticed that the importance of already existing external conditioning (f0, loudness) would render the latent space almost meaningless (having no impact on the generated sounds). Therefore, we believe that DDSP would not be able to take into account our implicit descriptors' conditioning, hence not being a sound choice as a baseline. Beyond our intuition, we performed additional experiments with DDSP as a baseline with NSynth dataset and we display here a straightforward comparison table between our two baseline, RAVE d'une part et DDSP d'autre part.  
+Some methods such as the DDSP families are able to perform reconstruction and timbre transfer and could have potentially be a good candidate for a baseline to our work instead of RAVE. However, we believe that the monophonic nature of DDSP is an impediment to an artistic endeavor, especially as our model aims to be embedded into a hardware musical tool. Furthermore, DDSP provides explicit control whereas our work is based on implicit control. In our past experiments with DDSP, we have noticed that the importance of already existing external conditioning (f0, loudness) would render the latent space almost meaningless (having no impact on the generated sounds). Therefore, we believe that DDSP would not be able to take into account our implicit descriptors' conditioning, hence not being a sound choice as a baseline. However, we performed additional experiments with DDSP as a baseline with NSynth dataset and we display here a straightforward comparison table between our two baseline, RAVE and DDSP.
 
+After the submission, we continued to work on our approach for artistic applications and performed hyperparameters tuning which have significantly improved the overall performance. These additional experiments have been conducted with the latest version.
+
+|    Model   |  JND |  Mel  | mSTFT |
+|:----------:|:----:|:-----:|:-----:|
+| Fader-DDSP | 0.39 | 36.69 |  7.10 |
+|   F-RAVE   | 0.24 | 14.58 |  4.93 |
+
+**Table A**. Comparison of the reconstruction provided by Fader-DDSP and F-RAVE for multi-attribute training
+
+|    Model   |   1  |   2  |   3  |   4  |
+|:----------:|:----:|:----:|:----:|:----:|
+| Fader-DDSP | 0.78 | 0.73 | 0.67 | 0.61 |
+|   F-RAVE   | 0.83 | 0.78 | 0.75 | 0.75 |
+
+**Table B**.  Comparison of control provided by Fader-DDSP and F-RAVE when changing one, or a set of multiple descriptors (up to 4) 
                                                                                                 
-|  Model |  JND  |  Mel  | mSTFT | Centroid |  RMS | Bandwidth | Sharpness | Booming | Mean |
-|:------:|:-----:|:-----:|:-----:|:--------:|:----:|:---------:|:---------:|:-------:|:----:|
-| C-DDSP |  0.28 | 36.65 |  7.14 |   0.52   | 0.62 |    0.54   |    0.69   |   0.63  | 0.60 |
-| F-DDSP |  0.39 | 36.69 |  7.10 |   0.47   | 0.59 |    0.47   |    0.68   |   0.53  | 0.55 |
-| C-RAVE | 0.235 | 13.92 |  4.88 |   0.74   | 0.72 |    0.64   |    0.62   |   0.73  | 0.69 |
-| F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   | 0.76 |    0.66   |    0.72   |   0.77  | 0.73 |               
+|  Model |  JND  |  Mel  | mSTFT | Centroid |
+|:------:|:-----:|:-----:|:-----:|:--------:|
+| C-DDSP |  0.28 | 36.65 |  7.14 |   0.52   |
+| F-DDSP |  0.39 | 36.69 |  7.10 |   0.47   |
+| C-RAVE | 0.235 | 13.92 |  4.88 |   0.74   |
+| F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   |   
+
+**Table C**. Comparaison of the reconstruction for mono attribute training (RMS).
+
+|  Model |  RMS | Bandwidth | Sharpness | Booming | Mean |
+|:------:|:----:|:---------:|:---------:|:-------:|:----:|
+| C-DDSP | 0.62 |    0.54   |    0.69   |   0.63  | 0.60 |
+| F-DDSP | 0.59 |    0.47   |    0.68   |   0.53  | 0.55 |
+| C-RAVE | 0.72 |    0.64   |    0.62   |   0.73  | 0.69 |
+| F-RAVE | 0.76 |    0.66   |    0.72   |   0.77  | 0.73 |
+
+**Table D**. Comparison of the control provided by various models on different descriptors for mono-attribute.
 
 
 In the following, we present the evaluation on our model FRAVE on several dataset that were not presented in our paper.
