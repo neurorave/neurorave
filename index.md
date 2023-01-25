@@ -21,7 +21,7 @@ This website presents additional material and experiments around the paper *Cont
 
 Despite significant advances in deep models for music generation, the use of these techniques remains restricted to expert users. Before being democratized among musicians, generative models must first provide _expressive control_ over the generation, as this conditions the integration of deep generative models in creative workflows. In this paper, we tackle this issue by introducing a deep generative audio model providing expressive and continuous descriptor-based control, while remaining lightweight enough to be embedded in a hardware synthesizer. We enforce the controllability of real-time generation by explicitly removing salient musical features in the latent space using an adversarial confusion criterion. User-specified features are then reintroduced as additional conditioning information, allowing for _continuous_ control of the generation, akin to a synthesizer knob. We assess the performance of our method on a wide variety of sounds including instrumental, percussive and speech recordings while providing both _timbre_ and _attributes_ transfer, allowing new ways of generating sounds.
 
-_We would like to thank our reviewers for their helpful suggestions and comments on our paper and on this accompagnon website._ 
+_We would like to thank our reviewers for their helpful suggestions and comments on our article and this accompanying website._ 
 
 **Examples contents**
   * [Audio reconstruction](#audio-reconstruction)
@@ -573,11 +573,6 @@ In this section we take the model trained on a particular dataset and we pass it
 </div>
 
 
-
-
-
-
-
 ## Additionnal details
                                                                                                 
 ### Comparison with DDSP
@@ -639,7 +634,7 @@ We pursued our experiments on instrumental sounds with an internal dataset of vi
 |:-----:|:------:|:-----:|:-----:|:-----:|:---------:|
 | 0.226 | 12.998 | 7.591 | 0.791 | 0.252 |   0.136   |
 
-We think this dataset composed of melodies played by one or several violin is more adapted to artistic purpose than Nsynth which is monophonic.
+We think this dataset composed of melodies played by one or several violin is more adapted to artistic purpose than te monophonic Nsynth.
 
 ## Hardware embedding
 
