@@ -515,19 +515,24 @@ Some methods such as the DDSP families are able to perform reconstruction and ti
 
 After the submission, we continued to work on our approach for artistic applications and performed hyperparameters tuning which have significantly improved the overall performance. These additional experiments have been conducted with the latest version.
 
+
 |    Model   |  JND |  Mel  | mSTFT |
 |:----------:|:----:|:-----:|:-----:|
 | Fader-DDSP | 0.39 | 36.69 |  7.10 |
 |   F-RAVE   | 0.24 | 14.58 |  4.93 |
 
-**Table A**. Comparison of the reconstruction provided by Fader-DDSP and F-RAVE for multi-attribute training
+**Table A**. Comparison of the reconstruction provided by Fader-DDSP and F-RAVE for multi-attribute training.
+
+
 
 |    Model   |   1  |   2  |   3  |   4  |
 |:----------:|:----:|:----:|:----:|:----:|
 | Fader-DDSP | 0.78 | 0.73 | 0.67 | 0.61 |
 |   F-RAVE   | 0.83 | 0.78 | 0.75 | 0.75 |
 
-**Table B**.  Comparison of control provided by Fader-DDSP and F-RAVE when changing one, or a set of multiple descriptors (up to 4) 
+**Table B**.  Comparison of control provided by Fader-DDSP and F-RAVE when changing one, or a set of multiple descriptors (up to 4). 
+
+
                                                                                                 
 |  Model |  JND  |  Mel  | mSTFT | Centroid |
 |:------:|:-----:|:-----:|:-----:|:--------:|
@@ -537,6 +542,8 @@ After the submission, we continued to work on our approach for artistic applicat
 | F-RAVE | 0.240 | 14.58 |  4.93 |   0.78   |   
 
 **Table C**. Comparaison of the reconstruction for mono attribute training (RMS).
+
+
 
 |  Model |  RMS | Bandwidth | Sharpness | Booming | Mean |
 |:------:|:----:|:---------:|:---------:|:-------:|:----:|
