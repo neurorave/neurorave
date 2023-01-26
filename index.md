@@ -124,7 +124,7 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 <br/>
 
-In order to exploit the artistic potential of our method, we performed extended experiments on other datasets than those presented in the paper. We selected a Japanese voices dataset to extend the performance of SC09, which may be limited for attribute exchange or timbre transfer, and we selected a violin dataset to get rid of the monophonic and short note of Nsynth. For the *SC09*, *Japanese* and *Violin* datasets, we only present the results of our proposed *F-Rave* model.
+In order to exploit the artistic potential of our method, we performed extended experiments on other datasets than those presented in the paper. We selected a Japanese voices dataset to extend the performance of SC09, which may be limited for attribute exchange or timbre transfer, and we selected a violin dataset to get rid of the monophonic and short note of Nsynth. For the *SC09*, *Japanese* and *Violin* datasets, we only present the results of our proposed *F-Rave* model. We display the analysis of the additionnal datasets  below.
 
 <div class="figure">
     <table style="width:100%;">
@@ -240,7 +240,7 @@ In this section, we further analyze how different methods behave in terms of con
 
 **Attributes coming from classical synthesizers control signals**
 
-As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results might be strongly alterated as these controls may not be the most appropriate for attributes modification. They sometimes sound unnatural and some sonic artifacts (such as distortion or flanger effect) might appear when incoming controls are very different from the training data. Better audio results could be achieved by applying more subtle and tailored controls to better match the input: curve shifting in order to stay in the amplitude range of the input, modulation in order to better fit the input, filtering or the control or even parts editing. The goal would be to obtain adapted features curves in order to be closer to the original curves.  
+As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results might be strongly alterated as these controls may not be the most appropriate for attributes modification. They sometimes sound unnatural and some sonic artifacts (such as distortion or flanger effect) might appear when incoming controls are very different from the training data. Better audio results could be achieved by applying more subtle and tailored controls to better match the input: curve shifting in order to stay in the amplitude range of the input, modulation in order to better fit the input, filtering or the control or even parts editing. The goal would be to obtain adapted features curves in order to be closer to the original curves. This work will be part of future work.
 
 Original sound:
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
@@ -291,7 +291,7 @@ Modulated sound from classical Eurorack synthesizers signals, we slide the attri
 
 **Attributes coming from an other sample of the dataset**
 
-Here, we select as modulators the attributes of other samples coming from the same dataset. The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes.
+Here, we select as modulators the attributes of other samples coming from the same dataset. The modification of attributes are clearly heard and it appears that the RMS and the centroid have a strong influence on the sound generation whereas the sharpness and the boominess have a more subtle effect. However, taking the attributes from an other sample of the dataset quickly degrades the quality on the Japanese dataset and on the violin. This is due to the abrupt change of attributes which can easily be outside of the range of the original attributes. Similarly to the section above, the best would be to adapt the feature to the input in order to obtain more natural sounds. 
 
 <div class="figure">
     <table style="width:100%;">
