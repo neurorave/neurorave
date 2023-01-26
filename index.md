@@ -124,8 +124,7 @@ First, we compare the quality of our models to perform pure reconstruction of an
 
 <br/>
 
-In order to exploit the artistic potential of our method, we performed extended experiments on other datasets than those presented in the paper. We selected a Japanese voice dataset to extend the performance of SC09, which may be limited for attribute exchange or timbre transfer, and we selected a violin dataset to get rid of the monophonic and short unique note of Nsynth. For the *SC09*, *Japanese* and *Violin* datasets, we only present the results of our proposed *F-Rave* model.
-
+In order to exploit the artistic potential of our method, we performed extended experiments on other datasets than those presented in the paper. We selected a Japanese voices dataset to extend the performance of SC09, which may be limited for attribute exchange or timbre transfer, and we selected a violin dataset to get rid of the monophonic and short note of Nsynth. For the *SC09*, *Japanese* and *Violin* datasets, we only present the results of our proposed *F-Rave* model.
 
 <div class="figure">
     <table style="width:100%;">
@@ -162,8 +161,6 @@ In order to exploit the artistic potential of our method, we performed extended 
         </tr>
     </table>
 </div>
-
-
 
 <div class="figure">
     <table style="width:100%;">
@@ -243,7 +240,7 @@ In this section, we further analyze how different methods behave in terms of con
 
 **Attributes coming from classical synthesizers control signals**
 
-As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results are strongly alterated as these controls might not be the most appropriate for attributes modification. In order to obtain more natural results, the features curves should have been adapted to be closer to the original curves.  
+As experiments, we first simulates the behavior faders sliding by taking rampes up, rampes down, sinusoides and sawtooth as modulators. Those are the classic control available on traditionnal synthesizers. The results might be strongly alterated as these controls may not be the most appropriate for attributes modification. They sometimes sound unnatural and some sonic artifacts (such as distortion or flanger effect) might appear when incoming controls are very different from the training data. Better audio results could be achieved by applying more subtle and tailored controls to better match the input: curve shifting in order to stay in the amplitude range of the input, modulation in order to better fit the input, filtering or the control or even parts editing. The goal would be to obtain adapted features curves in order to be closer to the original curves.  
 
 Original sound:
 <img src="audio/eurorack_single/darbouka_darbouka.png" width="100%">
