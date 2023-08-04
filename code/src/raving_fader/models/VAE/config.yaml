@@ -1,0 +1,80 @@
+## Specific parameters here, General parameters handled by init.py ##
+
+### DATA ###
+data:
+  test: "spectro"
+  dataset:  "audio"  # "nsynth_full" # "impacts"
+  data_location:  "/data/nils/sc09" #"/fast-2/datasets/waveform/nsynth_string" # "/data/nils/sc09"
+  output_path: '/data/ninon' # "/data/ninon/output"
+  # '/home/hime/Work/Coding/raving-fader/src/raving_fader/models/VAE/output'
+  trained_models_path: "/data/ninon/trained_models_sc09"
+  allowed_extensions: ["wav", "mp3"]
+  test_size: 0.1
+  valid_size: 0.1
+  max_length: 4 # Max length of audio in second
+  shuffle_dataset: 1
+  representation: "melspectrogram"
+  # Can be spectrogram, melspectrogram, waveform, features
+  vae_features: 1
+  export: 1 # Compute representation of dataset
+  dataset_features: 1 # Compute histogram of features for dataset
+  subsample: 0 # Train on subset
+  duration: 1
+  transform: 1
+  split_percent: 0.1
+
+
+### SPECTROGRAM ARGS ###
+preprocess:
+  n_fft: &nfft 1024
+  sample_rate: &samplerate 16000
+  win_length: Null
+  hop_length: 512
+  n_mels: 80
+#  out_dir: ./data/preprocessed/drums_small_types/
+
+
+### MODEL & ARCHITECTURE ###
+model:
+  test_trained: 1
+  fader: 1  # CHANGE HERE
+  model: "vae_fader"  # CHANGE HERE
+  encoder_type: "cnn2d_fader"  # "cnn2d"
+  latent: 0
+  beta: 0.1
+  beta_delay: 15
+  enc_hidden_size: 1024
+  latent_size: 8
+  cond_hidden_size: 1024
+  dec_hidden_size: 512
+  num_layers: 2
+  num_classes: 13 # Number of classes for attributes
+  initialize: 0 # use initialization on the model
+  sample_rate: *samplerate
+  n_attr: 1 # Number of attribute
+
+discriminator:
+  num_layers: 4
+  clip_grad_norm: 5 # 0 to disable
+  n_lat_dis: 1 # Number of latent discriminator training step
+  lambda_lat_dis: 0.5 # Latent discriminator loss feedback coefficient
+  lambda_delay: 30 # Progressively increase discriminators' lambdas (0 to disable)
+
+
+### OPTIMIZATION ###
+train:
+  device: "cuda:1"
+  batch_size: 16
+  epochs: 200
+  early_stop: 80
+  nb_workers: 0
+  lr: 0.001
+  seed: 1
+
+### RECONSTRUCTION ###
+reconstruction:
+  n_steps: 11
+  nb_samples: 2
+
+### DEBUG MODE ###
+debug: 0

@@ -1,0 +1,45 @@
+data:
+  descriptors:
+  - centroid
+  - rms
+  - zcr
+  load_dataset: null
+  n_signal: 65536
+  preprocessed: null
+  sr: 16000
+  wav: null
+
+rave:
+  bias: true
+  capacity: 64
+  cropped_latent_size: 0
+  d_capacity: 16
+  d_multiplier: 4
+  d_n_layers: 4
+  data_size: 8
+  feature_match: true
+  latent_size: 128
+  loud_stride: 1
+  max_kl: 0.1
+  min_kl: 0.1
+  mode: hinge
+  no_latency: false
+  noise_bands: 5
+  noise_ratios:
+  - 4
+  - 4
+  - 4
+  ratios:
+  - 4
+  - 4
+  - 4
+  - 2
+  use_noise: true
+  warmup: 1000000
+
+train:
+  batch: 8
+  ckpt: null
+  max_steps: 3000000
+  models_dir: null
+  name: null
